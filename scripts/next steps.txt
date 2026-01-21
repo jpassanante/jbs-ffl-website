@@ -1,0 +1,5 @@
+Next steps:
+Review the data — check a few JSON files to verify accuracy
+Create a transformation script — convert the ESPN data into the format your website needs (e.g., update champions.js with playoff results, extract head-to-head records, etc.)
+Update your website — use the transformed data to populate pages like All-Time Records, Head-to-Head, etc.
+

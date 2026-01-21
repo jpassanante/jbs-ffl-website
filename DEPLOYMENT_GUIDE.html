@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deploy Your Fantasy Football Website to Vercel</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #1E4D9B;
+            border-bottom: 3px solid #FDB515;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #1E4D9B;
+            margin-top: 30px;
+            border-left: 4px solid #FDB515;
+            padding-left: 15px;
+        }
+        h3 {
+            color: #1E4D9B;
+            margin-top: 25px;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #1E4D9B;
+            overflow-x: auto;
+        }
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .note {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .success {
+            background-color: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .warning {
+            background-color: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        a {
+            color: #1E4D9B;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .page-break {
+            page-break-before: always;
+        }
+    </style>
+</head>
+<body>
+    <h1>Deploy Your Fantasy Football Website to Vercel</h1>
+    
+    <div class="success">
+        <strong>✓ Prerequisites Check:</strong> Your Next.js configuration is already set up correctly for static export, so no code changes are needed!
+    </div>
+
+    <h2>Part 1: Set Up GitHub (if you don't have an account)</h2>
+    
+    <h3>1. Create a GitHub account (if needed):</h3>
+    <ol>
+        <li>Go to <a href="https://github.com">https://github.com</a></li>
+        <li>Click "Sign up"</li>
+        <li>Follow the prompts to create your account</li>
+        <li>Verify your email address</li>
+    </ol>
+
+    <h3>2. Install Git (if not already installed):</h3>
+    <ol>
+        <li>Download from <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></li>
+        <li>Run the installer with default settings</li>
+        <li>This lets you push code to GitHub from your computer</li>
+    </ol>
+
+    <div class="page-break"></div>
+
+    <h2>Part 2: Create a GitHub Repository</h2>
+    
+    <ol>
+        <li><strong>Log into GitHub</strong> and click the "+" icon in the top right</li>
+        <li><strong>Select "New repository"</strong></li>
+        <li><strong>Fill in the details:</strong>
+            <ul>
+                <li>Repository name: <code>jbs-ffl-website</code> (or any name you like)</li>
+                <li>Description: "JBS Fantasy Football League Website" (optional)</li>
+                <li>Choose <strong>Public</strong> (required for free hosting)</li>
+                <li><strong>DO NOT</strong> check "Initialize with README" (you already have code)</li>
+                <li>Click <strong>"Create repository"</strong></li>
+            </ul>
+        </li>
+    </ol>
+
+    <h2>Part 3: Push Your Code to GitHub</h2>
+    
+    <h3>1. Open PowerShell in your project folder:</h3>
+    <ul>
+        <li>Navigate to: <code>\\rbfil21\Users$\jpassanante\Documents\vibe-lab\fantasy-football</code></li>
+        <li>Or right-click the <code>fantasy-football</code> folder and select "Open in Terminal" or "Open PowerShell here"</li>
+    </ul>
+
+    <h3>2. Initialize Git (if not already done):</h3>
+    <pre><code>git init</code></pre>
+
+    <h3>3. Add all your files:</h3>
+    <pre><code>git add .</code></pre>
+
+    <h3>4. Create your first commit:</h3>
+    <pre><code>git commit -m "Initial commit - JBS FFL website"</code></pre>
+
+    <h3>5. Connect to GitHub (replace <code>YOUR_USERNAME</code> with your GitHub username):</h3>
+    <pre><code>git remote add origin https://github.com/YOUR_USERNAME/jbs-ffl-website.git</code></pre>
+
+    <h3>6. Push your code:</h3>
+    <pre><code>git branch -M main
+git push -u origin main</code></pre>
+    <p>You'll be prompted for your GitHub username and password (use a Personal Access Token, not your regular password - see note below)</p>
+
+    <div class="note">
+        <strong>⚠ Important: GitHub Authentication</strong><br>
+        GitHub requires a Personal Access Token instead of a password:
+        <ol>
+            <li>Go to GitHub → Settings → Developer settings → Personal access tokens → Tokens (classic)</li>
+            <li>Click "Generate new token (classic)"</li>
+            <li>Give it a name like "Vercel Deployment"</li>
+            <li>Check the <code>repo</code> scope</li>
+            <li>Click "Generate token"</li>
+            <li>Copy the token and use it as your password when pushing</li>
+        </ol>
+    </div>
+
+    <div class="page-break"></div>
+
+    <h2>Part 4: Deploy to Vercel</h2>
+    
+    <h3>1. Go to Vercel:</h3>
+    <p>Visit <a href="https://vercel.com">https://vercel.com</a></p>
+
+    <h3>2. Sign up:</h3>
+    <ol>
+        <li>Click "Sign Up"</li>
+        <li>Choose "Continue with GitHub"</li>
+        <li>Authorize Vercel to access your GitHub account</li>
+    </ol>
+
+    <h3>3. Import your project:</h3>
+    <ol>
+        <li>After signing in, click "Add New..." → "Project"</li>
+        <li>You'll see your GitHub repositories listed</li>
+        <li>Find <code>jbs-ffl-website</code> and click <strong>"Import"</strong></li>
+    </ol>
+
+    <h3>4. Configure the project:</h3>
+    <ul>
+        <li>Vercel will auto-detect Next.js</li>
+        <li>Framework Preset: Next.js (should be auto-selected)</li>
+        <li>Root Directory: <code>./</code> (leave as default)</li>
+        <li>Build Command: <code>npm run build</code> (should be auto-filled)</li>
+        <li>Output Directory: <code>.next</code> (should be auto-filled)</li>
+        <li><strong>Click "Deploy"</strong></li>
+    </ul>
+
+    <h3>5. Wait for deployment (2-3 minutes):</h3>
+    <ul>
+        <li>Vercel will build and deploy your site</li>
+        <li>You'll see progress in real-time</li>
+    </ul>
+
+    <h3>6. Get your live URL:</h3>
+    <ul>
+        <li>Once complete, you'll see "Congratulations!"</li>
+        <li>Your site will be live at: <code>https://jbs-ffl-website.vercel.app</code> (or similar)</li>
+        <li>Click the URL to view your live site!</li>
+    </ul>
+
+    <div class="success">
+        <strong>🎉 Congratulations!</strong> Your website is now live and ready to share!
+    </div>
+
+    <h2>Part 5: Share with Your Leaguemates</h2>
+    <ul>
+        <li>Share the Vercel URL with your leaguemates</li>
+        <li>The site will automatically update whenever you push new code to GitHub</li>
+    </ul>
+
+    <h2>Optional: Custom Domain (Later)</h2>
+    <p>If you want a custom domain like <code>jbsffl.com</code>:</p>
+    <ol>
+        <li>In Vercel, go to your project → Settings → Domains</li>
+        <li>Add your domain</li>
+        <li>Follow Vercel's instructions to configure DNS</li>
+    </ol>
+
+    <div class="page-break"></div>
+
+    <h2>Troubleshooting</h2>
+    
+    <h3>Build fails?</h3>
+    <p>Check the build logs in Vercel for error messages</p>
+
+    <h3>Can't push to GitHub?</h3>
+    <p>Make sure you're using a Personal Access Token, not your password</p>
+
+    <h3>Site not updating?</h3>
+    <p>Make sure you've pushed new code to GitHub - Vercel auto-deploys on every push</p>
+
+    <hr style="margin-top: 40px; border: none; border-top: 2px solid #FDB515;">
+    <p style="text-align: center; color: #666; margin-top: 20px;">
+        <small>JBS Fantasy Football League - Deployment Guide</small>
+    </p>
+</body>
+</html>

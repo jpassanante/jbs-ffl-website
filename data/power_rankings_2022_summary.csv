@@ -1,0 +1,182 @@
+Week 1
+Traditional Ranking,Record,Points,Breakdown,Total
+John,8.0,10.0,10.0,28.0
+Joey,8.0,9.0,9.0,26.0
+Ben,8.0,7.0,7.0,22.0
+Vernon,8.0,6.0,6.0,20.0
+Matt,3.0,8.0,8.0,19.0
+Peter,8.0,3.0,3.0,14.0
+Ted,3.0,5.0,5.0,13.0
+Jason,3.0,4.0,4.0,11.0
+Lanny,3.0,2.0,2.0,7.0
+Tyler,3.0,1.0,1.0,5.0
+
+Week 2
+Traditional Ranking,Record,Points,Breakdown,Total
+John,8.5,10.0,9.0,27.5
+Joey,8.5,9.0,10.0,27.5
+Vernon,8.5,7.0,7.0,22.5
+Matt,5.5,8.0,8.0,21.5
+Ben,8.5,6.0,6.0,20.5
+Ted,2.5,5.0,5.0,12.5
+Jason,2.5,4.0,4.0,10.5
+Lanny,2.5,3.0,3.0,8.5
+Peter,5.5,1.0,2.0,8.5
+Tyler,2.5,2.0,1.0,5.5
+
+Week 3
+Traditional Ranking,Record,Points,Breakdown,Total
+Matt,7.5,9.0,10.0,26.5
+John,7.5,10.0,9.0,26.5
+Joey,10.0,8.0,8.0,26.0
+Ben,7.5,7.0,7.0,21.5
+Vernon,7.5,5.0,5.0,17.5
+Jason,3.5,6.0,6.0,15.5
+Lanny,3.5,4.0,4.0,11.5
+Tyler,3.5,2.0,2.0,7.5
+Ted,1.0,3.0,3.0,7.0
+Peter,3.5,1.0,1.0,5.5
+
+Week 4
+Traditional Ranking,Record,Points,Breakdown,Total
+John,9.0,10.0,10.0,29.0
+Joey,9.0,9.0,8.5,26.5
+Matt,5.0,7.0,8.5,20.5
+Ben,9.0,4.0,5.5,18.5
+Jason,2.0,8.0,7.0,17.0
+Lanny,5.0,6.0,5.5,16.5
+Vernon,5.0,5.0,4.0,14.0
+Tyler,5.0,2.0,3.0,10.0
+Peter,5.0,1.0,1.0,7.0
+Ted,1.0,3.0,2.0,6.0
+
+Week 5
+Traditional Ranking,Record,Points,Breakdown,Total
+John,10.0,10.0,10.0,30.0
+Joey,7.0,8.0,8.0,23.0
+Jason,3.0,9.0,9.0,21.0
+Vernon,7.0,7.0,6.5,20.5
+Ben,7.0,5.0,2.5,14.5
+Peter,7.0,3.0,4.5,14.5
+Tyler,7.0,4.0,2.5,13.5
+Lanny,3.0,6.0,4.5,13.5
+Matt,3.0,2.0,6.5,11.5
+Ted,1.0,1.0,1.0,3.0
+
+Week 6
+Traditional Ranking,Record,Points,Breakdown,Total
+John,10.0,10.0,10.0,30.0
+Joey,8.5,8.0,8.0,24.5
+Jason,5.5,9.0,9.0,23.5
+Peter,8.5,5.0,7.0,20.5
+Vernon,5.5,7.0,3.0,15.5
+Ben,5.5,4.0,4.5,14.0
+Lanny,2.5,6.0,4.5,13.0
+Matt,2.5,3.0,6.0,11.5
+Tyler,5.5,2.0,2.0,9.5
+Ted,1.0,1.0,1.0,3.0
+
+Week 7
+Traditional Ranking,Record,Points,Breakdown,Total
+John,10.0,9.0,10.0,29.0
+Jason,7.0,10.0,9.0,26.0
+Joey,7.0,8.0,8.0,23.0
+Peter,7.0,7.0,7.0,21.0
+Vernon,7.0,5.0,2.5,14.5
+Tyler,7.0,3.0,4.0,14.0
+Lanny,2.0,6.0,5.0,13.0
+Ben,4.0,4.0,2.5,10.5
+Matt,2.0,2.0,6.0,10.0
+Ted,2.0,1.0,1.0,4.0
+
+Week 8
+Traditional Ranking,Record,Points,Breakdown,Total
+John,10.0,10.0,10.0,30.0
+Joey,8.5,8.0,8.0,24.5
+Jason,6.0,9.0,9.0,24.0
+Peter,6.0,6.0,6.5,18.5
+Matt,3.0,7.0,6.5,16.5
+Tyler,8.5,3.0,5.0,16.5
+Vernon,6.0,4.0,2.0,12.0
+Ted,3.0,2.0,4.0,9.0
+Lanny,1.0,5.0,3.0,9.0
+Ben,3.0,1.0,1.0,5.0
+
+Week 9
+Traditional Ranking,Record,Points,Breakdown,Total
+John,10.0,10.0,10.0,30.0
+Jason,7.0,9.0,9.0,25.0
+Joey,7.0,8.0,8.0,23.0
+Peter,7.0,6.0,6.0,19.0
+Matt,2.5,7.0,7.0,16.5
+Tyler,9.0,3.0,4.0,16.0
+Ted,4.5,5.0,5.0,14.5
+Vernon,4.5,4.0,3.0,11.5
+Lanny,1.0,2.0,2.0,5.0
+Ben,2.5,1.0,1.0,4.5
+
+Week 10
+Traditional Ranking,Record,Points,Breakdown,Total
+John,10.0,10.0,10.0,30.0
+Jason,6.0,9.0,8.5,23.5
+Joey,6.0,8.0,8.5,22.5
+Peter,8.5,6.0,6.0,20.5
+Matt,3.0,7.0,7.0,17.0
+Vernon,6.0,5.0,4.5,15.5
+Tyler,8.5,3.0,3.0,14.5
+Ted,3.0,4.0,4.5,11.5
+Ben,3.0,1.0,2.0,6.0
+Lanny,1.0,2.0,1.0,4.0
+
+Week 11
+Traditional Ranking,Record,Points,Breakdown,Total
+John,10.0,10.0,10.0,30.0
+Jason,5.5,9.0,9.0,23.5
+Peter,8.5,6.0,7.5,22.0
+Joey,5.5,8.0,7.5,21.0
+Matt,5.5,7.0,6.0,18.5
+Tyler,8.5,4.0,3.5,16.0
+Vernon,5.5,5.0,5.0,15.5
+Ted,2.5,2.0,3.5,8.0
+Lanny,1.0,3.0,2.0,6.0
+Ben,2.5,1.0,1.0,4.5
+
+Week 12
+Traditional Ranking,Record,Points,Breakdown,Total
+John,10.0,10.0,10.0,30.0
+Jason,6.5,9.0,9.0,24.5
+Peter,8.0,5.0,7.0,20.0
+Joey,4.0,8.0,8.0,20.0
+Vernon,6.5,7.0,5.0,18.5
+Tyler,9.0,4.0,4.0,17.0
+Matt,4.0,6.0,6.0,16.0
+Ben,4.0,2.0,1.0,7.0
+Lanny,1.0,3.0,3.0,7.0
+Ted,2.0,1.0,2.0,5.0
+
+Week 13
+Traditional Ranking,Record,Points,Breakdown,Total
+John,10.0,10.0,10.0,30.0
+Jason,7.5,9.0,9.0,25.5
+Peter,7.5,5.0,7.0,19.5
+Joey,3.5,8.0,8.0,19.5
+Matt,5.5,6.0,6.0,17.5
+Vernon,5.5,7.0,5.0,17.5
+Tyler,9.0,4.0,4.0,17.0
+Ben,3.5,2.0,2.0,7.5
+Lanny,1.5,3.0,3.0,7.5
+Ted,1.5,1.0,1.0,3.5
+
+Week 14
+Traditional Ranking,Record,Points,Breakdown,Total
+John,10.0,10.0,10.0,30.0
+Jason,8.0,9.0,9.0,26.0
+Vernon,6.5,7.0,6.5,20.0
+Joey,4.0,8.0,8.0,20.0
+Peter,6.5,5.0,6.5,18.0
+Tyler,9.0,4.0,4.0,17.0
+Matt,4.0,6.0,5.0,15.0
+Ben,4.0,2.0,2.0,8.0
+Lanny,1.5,3.0,3.0,7.5
+Ted,1.5,1.0,1.0,3.5
+
