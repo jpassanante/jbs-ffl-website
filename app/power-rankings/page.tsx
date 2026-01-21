@@ -15,7 +15,7 @@ export default function PowerRankings() {
   const availableSeasons = getAvailableSeasons();
   const [selectedSeason, setSelectedSeason] = useState<number>(availableSeasons[0] || 2025);
 
-  const seasonData = powerRankings[selectedSeason];
+  const seasonData = powerRankings[selectedSeason.toString()];
 
   // Prepare chart data: one data point per week with each manager's totalRank
   const chartData = useMemo(() => {
