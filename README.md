@@ -49,3 +49,6 @@ All the data (standings, teams, schedule) is currently hardcoded in the page com
 - TypeScript
 - Tailwind CSS
 - Static Site Generation (no database needed)
+
+   
+   <!-- Deployment trigger -->
