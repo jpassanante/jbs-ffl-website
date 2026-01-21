@@ -34,57 +34,40 @@ export default function AllTimeRecords() {
                 {record.category}
               </h3>
               
-              {record.top5 ? (
-                // Top 5 list display
-                <div className="space-y-3">
-                  {record.top5.map((entry: any) => (
-                    <div
-                      key={entry.rank}
-                      className={`flex items-center justify-between p-3 rounded-lg ${
-                        entry.rank === 1
-                          ? "bg-gradient-to-r from-jbsGold/20 to-jbsGold/10 border-2 border-jbsGold"
-                          : "bg-gray-50 border border-gray-200"
-                      }`}
-                    >
-                      <div className="flex items-center gap-3">
-                        <span
-                          className={`text-lg font-bold ${
-                            entry.rank === 1 ? "text-jbsGold" : "text-gray-400"
-                          }`}
-                        >
-                          #{entry.rank}
-                        </span>
-                        <div>
-                          <div className="font-semibold text-jbsBlue">
-                            {entry.holder}
-                          </div>
-                          <div className="text-xs text-gray-500">
-                            {entry.details}
-                          </div>
+              {/* Top 5 list display */}
+              <div className="space-y-3">
+                {record.top5.map((entry: any) => (
+                  <div
+                    key={entry.rank}
+                    className={`flex items-center justify-between p-3 rounded-lg ${
+                      entry.rank === 1
+                        ? "bg-gradient-to-r from-jbsGold/20 to-jbsGold/10 border-2 border-jbsGold"
+                        : "bg-gray-50 border border-gray-200"
+                    }`}
+                  >
+                    <div className="flex items-center gap-3">
+                      <span
+                        className={`text-lg font-bold ${
+                          entry.rank === 1 ? "text-jbsGold" : "text-gray-400"
+                        }`}
+                      >
+                        #{entry.rank}
+                      </span>
+                      <div>
+                        <div className="font-semibold text-jbsBlue">
+                          {entry.holder}
+                        </div>
+                        <div className="text-xs text-gray-500">
+                          {entry.details}
                         </div>
                       </div>
-                      <div className="text-lg font-bold text-jbsGold">
-                        {entry.record}
-                      </div>
                     </div>
-                  ))}
-                </div>
-              ) : (
-                // Single record display (backward compatibility)
-                <>
-                  <div className="flex items-start justify-between mb-3">
-                    <span className="text-2xl font-bold text-jbsGold">
-                      {record.record}
-                    </span>
+                    <div className="text-lg font-bold text-jbsGold">
+                      {entry.record}
+                    </div>
                   </div>
-                  <div className="text-gray-700 font-medium mb-1">
-                    {record.holder}
-                  </div>
-                  <div className="text-sm text-gray-600">
-                    {record.details}
-                  </div>
-                </>
-              )}
+                ))}
+              </div>
             </div>
           ))}
         </div>
